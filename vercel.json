@@ -1,0 +1,10 @@
+{
+  "framework": null,
+  "installCommand": "echo 'skip'",
+  "buildCommand": "echo 'skip'",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.py" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
