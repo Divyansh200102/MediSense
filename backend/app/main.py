@@ -6,7 +6,7 @@ from app.routes import auth, profile, ai_modules, health_logs, cancer_risk
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="MediConnect API",
+    title="MediSense API",
     description="AI-powered Smart Healthcare Assistant with Oncology Focus",
     version="1.0.0",
 )
@@ -33,4 +33,4 @@ app.include_router(cancer_risk.router)
 
 @app.get("/")
 def root():
-    return {"message": "MediConnect API is running", "docs": "/docs"}
+    return {"message": "MediSense API is running", "docs": "/docs"}

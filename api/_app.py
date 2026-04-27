@@ -1,5 +1,5 @@
 """
-Full MediConnect backend — imported by index.py.
+Full MediSense backend — imported by index.py.
 Kept in a separate file so Vercel's module scanner does not
 iterate over SQLAlchemy model classes (which break issubclass checks).
 """
@@ -30,7 +30,7 @@ import google.generativeai as genai
 # ─── Config ───────────────────────────────────────────────────────────────────
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/mediconnect"
+    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/medisense"
     SECRET_KEY: str = "dev-secret-key-change-in-production"
     GEMINI_API_KEY: str = ""
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24
@@ -301,7 +301,7 @@ def call_ai(prompt_key: str, user_message: str) -> dict:
 # ─── FastAPI App ──────────────────────────────────────────────────────────────
 
 app = FastAPI(
-    title="MediConnect API",
+    title="MediSense API",
     description="AI-powered Smart Healthcare Assistant with Oncology Focus",
     version="1.0.0",
 )
@@ -583,4 +583,4 @@ app.include_router(history_router)
 
 @app.get("/")
 def root():
-    return {"message": "MediConnect API is running", "docs": "/docs"}
+    return {"message": "MediSense API is running", "docs": "/docs"}

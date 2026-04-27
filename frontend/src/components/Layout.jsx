@@ -67,7 +67,7 @@ export default function Layout({ children }) {
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-md shadow-primary-500/20 animate-glow-pulse">
             <Heart className="w-5 h-5 text-white" fill="currentColor" />
           </div>
-          <span className="text-xl font-bold gradient-text">MediConnect</span>
+          <span className="text-xl font-bold gradient-text">MediSense</span>
         </div>
 
         {/* Nav */}

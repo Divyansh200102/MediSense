@@ -45,7 +45,7 @@ export default function Register() {
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-500/25 animate-float animate-glow-pulse">
               <Heart className="w-6 h-6 text-white" fill="currentColor" />
             </div>
-            <span className="text-3xl font-extrabold gradient-text">MediConnect</span>
+            <span className="text-3xl font-extrabold gradient-text">MediSense</span>
           </div>
           <p className="text-gray-400 text-sm font-medium tracking-wide">AI-Powered Healthcare Assistant</p>
         </div>

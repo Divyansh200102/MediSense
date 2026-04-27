@@ -1,4 +1,4 @@
-# MediConnect - AI Healthcare Assistant
+# MediSense - AI Healthcare Assistant
 
 A full-stack AI-powered healthcare assistant with a special focus on oncology patients. Built with **FastAPI** (Python) + **React** (Vite) + **PostgreSQL** + **Google Gemini AI**.
 
@@ -41,7 +41,7 @@ A full-stack AI-powered healthcare assistant with a special focus on oncology pa
 
 ```bash
 # Create the PostgreSQL database
-createdb mediconnect
+createdb medisense
 ```
 
 ### 2. Backend
@@ -85,7 +85,7 @@ The app will be at: [http://localhost:5173](http://localhost:5173)
 ## Project Structure
 
 ```
-mediconnect/
+medisense/
 ├── backend/
 │   ├── app/
 │   │   ├── __init__.py

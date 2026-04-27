@@ -3,7 +3,7 @@ from functools import lru_cache
 
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/mediconnect"
+    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/medisense"
     SECRET_KEY: str = "dev-secret-key-change-in-production"
     GEMINI_API_KEY: str = ""
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24
